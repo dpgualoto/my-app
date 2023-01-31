@@ -7,7 +7,7 @@ DROP COLUMN author
 alter table books
     add constraint author_id
         foreign key (author_id)
-            references author (id);
+            references authors (id);
 
 update books
 set author_id = 1

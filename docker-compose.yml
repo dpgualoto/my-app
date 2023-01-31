@@ -52,7 +52,7 @@ services:
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80" # entrypoint on docker e.g: 8888
     ports:
-      - "80:80" # localhost : entrypoint on docker e.g:  4545:8888
+      - "81:80" # localhost : entrypoint on docker e.g:  4545:8888
       - "8081:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
